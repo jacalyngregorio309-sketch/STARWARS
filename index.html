@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>$FORCE</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;700&family=Roboto+Condensed:wght@300;400;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+  <link rel="stylesheet" href="styles/styles.css"/>
+</head>
+<body class="page">
+  <header class="header" id="header">
+    <a class="header__logo" href="#hero" aria-label="$FORCE homepage">
+      <img class="header__logo-img" src="images/logo.PNG" alt="$FORCE logo"/>
+    </a>
+
+    <button class="header__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <span class="header__burger-line"></span>
+      <span class="header__burger-line"></span>
+      <span class="header__burger-line"></span>
+    </button>
+
+    <nav class="nav" id="nav" aria-label="Main">
+      <ul class="nav__list">
+<li class="nav__item">
+  <a class="nav__link nav__link--icon" href="https://t.me/Force_sol" aria-label="Telegram">
+    <img src="images/tglogo.png" alt="Telegram" class="nav__link-img">
+  </a>
+</li>
+<li class="nav__item">
+  <a class="nav__link nav__link--icon" href="https://x.com/Force_Sol" aria-label="X (Twitter)">
+    <img src="images/xlogo.png" alt="X" class="nav__link-img">
+  </a>
+</li>
+<li class="nav__item">
+  <a class="nav__link nav__link--icon" href="https://dexscreener.com/solana/coming soon" aria-label="Dexscreener">
+    <img src="images/dexlogo.png" alt="Dexscreener" class="nav__link-img">
+  </a>
+</li>
+
+        <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+        <li class="nav__item"><a class="nav__link" href="#roadmap">Roadmap</a></li>
+        <li class="nav__item"><a class="nav__link" href="#gallery">Memes</a></li>
+        <li class="nav__item"><a class="nav__cta btn btn--primary" href="https://jup.ag/swap?sell=So11111111111111111111111111111111111111112&buy= coming soon">Buy</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <canvas class="space" id="space" aria-hidden="true"></canvas>
+
+  <main class="main">
+    <section class="hero section" id="hero" data-section>
+      <div class="hero__bg">
+        <video
+          class="hero__bg-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          poster="images/img1.1.png"
+          aria-hidden="true"
+        >
+          <source src="/images/bgmovie.mp4" type="video/mp4">
+        </video>
+        <noscript>
+          <img class="hero__bg-img" src="images/img1.1.png" alt="">
+        </noscript>
+      </div>
+
+      <div class="hero__planets" aria-hidden="true">
+        <img class="hero__planet hero__planet--tatooine" src="images/planet-tatooine.png" alt="">
+        <img class="hero__planet hero__planet--hoth" src="images/planet-hoth.png" alt="">
+        <img class="hero__planet hero__planet--endor" src="images/planet-endor.png" alt="">
+      </div>
+
+      <div class="hero__content container reveal">
+        <h1 class="hero__title"><span class="hero__title-part">$FORCE</span> <span class="hero__title-outline">Star Wars</span></h1>
+        <p class="hero__subtitle">A meme coin from a galaxy far, far away. Keep calm and trust the Force.</p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#about">What is it?</a>
+          <a class="btn btn--ghost" href="#gallery">Memes</a>
+        </div>
+
+        <div class="hero__contract">
+          <span class="hero__contract-label">Contract:</span>
+          <code class="hero__contract-code" id="contractCode">coming soon</code>
+          <button class="hero__contract-copy btn btn--chip" data-copy="#contractCode">Copy</button>
+          <span class="hero__contract-status" id="copyStatus" aria-live="polite"></span>
+        </div>
+      </div>
+
+      <div class="section__gate section__gate--bottom"></div>
+    </section>
+
+    <section class="about section" id="about" data-section>
+      <div class="section__gate section__gate--top"></div>
+
+      <div class="about__inner container">
+        <div class="about__text reveal">
+          <h2 class="section-title">About</h2>
+          <p class="about__lead">
+            <strong>$FORCE</strong> is a community token where Jedi memes, hyperspeed, and wild fun collide.
+            No Imperial promises—only the <em>power of the community</em>.
+          </p>
+          <ul class="about__bullets">
+            <li class="about__bullet">Hyperspace transitions between sections — even a Sith can’t keep up.</li>
+            <li class="about__bullet">Fair tokenomics and a transparent launch.</li>
+            <li class="about__bullet">Meme culture: art, animations, events.</li>
+          </ul>
+          <div class="about__actions"></div>
+        </div>
+
+
+
+      </div>
+
+      <div class="section__gate section__gate--bottom"></div>
+    
+<section class="talk section" id="talk" data-section>
+  <div class="section__gate section__gate--top"></div>
+
+  <div class="talk__inner container reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start">
+    
+    <figure class="talk__photo say" data-side="right" aria-label="Sith">
+      <img class="talk__img say__img" src="images/IMG_0542.PNG" alt="Sith with lightsaber">
+      <figcaption class="say__bubble">The bears will win! Everything will be worth nothing.
+</figcaption>
+    </figure>
+
+    
+    <figure class="talk__about-ghost say pravka" data-side="left" aria-label="Yoda reply">
+      <img class="talk__about-img say__img" src="images/IMG_0448.PNG" alt="Yoda">
+      <figcaption class="say__bubble yodich say_my_name">Solana will be at $1,000, the bulls will win</figcaption>
+    </figure>
+  </div>
+
+  <div class="section__gate section__gate--bottom"></div>
+</section>
+
+
+<section class="roadmap section" id="roadmap" data-section>
+      <div class="section__gate section__gate--top"></div>
+
+      <div class="roadmap__inner container">
+        <h2 class="section-title reveal">Roadmap</h2>
+        <ol class="roadmap__list">
+          <li class="roadmap__item reveal"><span class="roadmap__tag">Q3</span>  <span class="roadmap__label">We mint the token with one button, no “dark commissions,” and the whitepaper is a napkin from the Cantina.</span></li>
+          <li class="roadmap__item reveal"><span class="roadmap__tag">Q4</span>  <span class="roadmap__label">Airdrops -  tokens fly to whoever first draws a lightsaber on their spoon</span></li>
+          <li class="roadmap__item reveal"><span class="roadmap__tag">Q1 2026</span>  <span class="roadmap__label">We freeze liquidity in carbonite “until the next full parsec,” and Chewbacca keeps the key.</span></li>
+          <li class="roadmap__item reveal"><span class="roadmap__tag">Q2 2026</span>  <span class="roadmap__label">Grand finale in the Cantinas: and the roadmap is ceremoniously declared jokes.</span></li>
+        </ol>
+      </div>
+
+      <div class="section__gate section__gate--bottom"></div>
+    </section>
+
+    <section class="gallery section" id="gallery" data-section>
+      <div class="section__gate section__gate--top"></div>
+
+      <div class="gallery__inner container">
+        <h2 class="section-title reveal">Memes</h2>
+
+        <div class="memes-grid reveal" aria-label="Memes grid">
+          <figure class="meme-card">
+            <img src="images/memes/meme1.png" alt="Tatooine">
+            <figcaption class="meme-card__cap"></figcaption>
+          </figure>
+
+          <figure class="meme-card">
+            <img src="images/memes/meme2.png" alt="Hoth">
+            <figcaption class="meme-card__cap"></figcaption>
+          </figure>
+
+          <figure class="meme-card">
+            <img src="images/memes/meme3.png" alt="Endor">
+            <figcaption class="meme-card__cap"></figcaption>
+          </figure>
+
+          <figure class="meme-card">
+            <img src="images/memes/meme4.png" alt="Hyperspace">
+            <figcaption class="meme-card__cap"></figcaption>
+          </figure>
+
+          <figure class="meme-card">
+            <img src="images/memes/meme5.png" alt="Dagobah">
+            <figcaption class="meme-card__cap"></figcaption>
+          </figure>
+
+          <figure class="meme-card">
+            <img src="images/memes/meme6.png" alt="Coruscant">
+            <figcaption class="meme-card__cap"></figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="section__gate section__gate--bottom"></div>
+    </section>
+
+    <section class="cta section" id="cta" data-section>
+      <div class="section__gate section__gate--top"></div>
+
+      <div class="cta__inner container reveal">
+        <div class="cta__text">
+          <h2 class="cta__title">Join the Rebellion</h2>
+          <p class="cta__subtitle">Telegram, Twitter, memes, and hyperspeed. Take the Coming soon with you.</p>
+        </div>
+        <div class="cta__actions">
+          <a class="btn btn--primary cta__btn" href="https://t.me/Force_sol" target="_blank" rel="noopener">Telegram</a>
+          <a class="btn btn--ghost cta__btn" href="https://x.com/Force_Sol" target="_blank" rel="noopener">X</a>
+          <a class="btn btn--primary cta__btn" href="https://dexscreener.com/solana/Coming soon" target="_blank" rel="noopener">Dexscreener</a>
+          <button class="btn btn--chip cta__btn" data-copy="#contractCode">Copy CA</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner container">
+      <div class="footer__brand">
+        <img class="footer__logo" src="images/IMG_0395.PNG" alt="">
+        <span class="footer__tagline">In a galaxy far, far away lives the $Coming soon meme.</span>
+      </div>
+      <nav class="footer__nav" aria-label="Footer">
+        <a class="footer__link" href="#about">About</a>
+        <a class="footer__link" href="#roadmap">Roadmap</a>
+        <a class="footer__link" href="#gallery">Gallery</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div class="transition" id="transition" aria-hidden="true"></div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
